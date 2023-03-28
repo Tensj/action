@@ -1,0 +1,9 @@
+name: window-ver
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
+jobs:
+  check-win-version:
+    runs-on: window-lastest
+    steps:
+      - name: check window-info
+        run: systeminfo
