@@ -9,3 +9,8 @@ jobs:
         run: lsb_release -a
       - name: display wording
         run: echo hello ${{ github.actor }}
+  check-win-version:
+    runs-on: window-lastest
+    steps:
+      - name: check window-info
+        run: systeminfo
